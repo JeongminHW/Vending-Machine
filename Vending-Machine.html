@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>카페 자판기</title>
+    <link rel="stylesheet" href="assets\style.css">
+</head>
+<body>
+    <div id="head">
+        <header>
+            <h1>자판기</h1>
+        </header>
+    </div>
+
+    <div class="container"> <!-- grid의 전체 영역 container-->
+        <div class="item">
+            <button class="menubutton" type="button">
+                <img src="assets/monster.png" alt="몬스터 캔 음료 이미지 사진" onclick="alert('몬스터')">
+            </button>
+            <div class="price">
+                1500원
+            </div>
+        </div>
+        <div class="item">
+            <button class="menubutton" type="button">
+                <img src="assets/monsterultra.png" alt="몬스터울트라 캔 음료 이미지 사진" onclick="alert('몬스터울트라')">
+            </button>
+            <div class="price">
+                1500원
+            </div>
+        </div>
+        <div class="item">
+            <button class="menubutton" type="button">
+                <img src="assets/redbull.png" alt="레드불 캔 음료 이미지 사진" onclick="alert('레드불')">
+            </button>
+            <div class="price">
+                1500원
+            </div>
+        </div>
+        <div class="item">
+            <button class="menubutton" type="button">
+                <img src="assets/fanta.png" alt="환타 캔 음료 이미지 사진" onclick="alert('환타')">
+            </button>
+            <div class="price">
+                1300원
+            </div>
+        </div>
+        <div class="item">
+            <button class="menubutton" type="button">
+                <img src="assets/drpepper.png" alt="닥터페퍼 캔 음료 이미지 사진" onclick="alert('닥터페퍼')">
+            </button>
+            <div class="price">
+                1500원
+            </div>
+        </div>
+        <div class="item">
+            <button class="menubutton" type="button">
+                <img src="assets/cocacola.png" alt="코카콜라 캔 음료 이미지 사진" onclick="alert('코카콜라')">
+            </button>
+            <div class="price">
+                1600원
+            </div>
+        </div>
+        <div class="item">
+            <button class="menubutton" type="button">
+                <img src="assets/cocacolazero.png" alt="코카콜라제로 캔 음료 이미지 사진" onclick="alert('코카콜라제로')">
+            </button>
+            <div class="price">
+                1700원
+            </div>
+        </div>
+        <div class="item">
+            <button class="menubutton" type="button">
+                <img src="assets/pepsi.png" alt="펩시콜라 캔 음료 이미지 사진" onclick="alert('펩시콜라')">
+            </button>
+            <div class="price">
+                1600원
+            </div>
+        </div>
+        <div class="item">
+            <button class="menubutton" type="button">
+                <img src="assets/sprite.png" alt="스프라이트 캔 음료 이미지 사진" onclick="alert('스프라이트')">
+            </button>
+            <div class="price">
+                1600원
+            </div>
+        </div>
+        <div class="item">
+            <button class="menubutton" type="button">
+                <img src="assets/mtndew.png" alt="마운틴듀 캔 음료 이미지 사진" onclick="alert('마운틴듀')">
+            </button>
+            <div class="price">
+                1500원
+            </div>
+        </div>
+        <div class="item">
+            <table class="scrolltable">
+                <tr><td>콜라</td></tr>
+                <tr><td>환타</td></tr>
+                <tr><td>몬스터</td></tr>
+                <tr><td>스프라이트</td></tr>
+            </table>
+        </div>
+        <div class="item">
+            <div class="pay">
+                가격 | <input class="intext" type="text" value="3000원" readonly>
+                <br>
+                입금 | <input class="intext" type="text">
+                <input type="button" value="입금">
+                <br>
+                잔액 | <input class="intext" type="text" value="500원" readonly>
+                <input type="button" value="반환">
+            </div>
+            
+        </div>
+    </div>
+
+</body>
+</html>

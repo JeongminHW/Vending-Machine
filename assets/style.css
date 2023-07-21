@@ -1,0 +1,85 @@
+body{
+    background-color: #CAF0F8;
+}
+
+#head{
+    text-align: center;
+    padding-top: 50px;
+}
+
+.container{
+    width: 1290px;
+    height: 690px;
+    display: grid;
+    border: 1px solid #000;
+    grid-template-columns: repeat(5, 1fr);
+    /* repeat : 반복되는 값을 자동으로 처리할 수 있는 함수 -> repeat(반복횟수, 반복값) */
+    align-items: center; /* 아이템들을 세로(column축) 방향으로 정렬 */
+    margin: auto;
+}
+
+.item{
+    display: block;
+    text-align: center;
+    margin: 30px;
+}
+
+.menuname{
+    text-align: center;
+    font-size: 24px;
+    background-color: #f8feff;
+    height: 150px;
+}
+
+.price{
+    text-align: center;
+    font-size: 24px;
+    color: white;
+    background-color: rgb(121, 121, 121);
+    height: 40px;
+}
+
+.item:nth-child(11){
+    height: 110px;
+    overflow-y: scroll; /* 영역 범위의 초과 여부 상관없이 항상 테이블에 스크롤을 표시 */
+    overflow-x: hidden; /* 가로 영역의 스크롤만 표시하지 않음 */
+    grid-column: auto / span 3; /* 컨테이너에 Grid 트랙의 크기들을 지정 */
+}
+
+.item:nth-child(12){
+    height: 110px;
+    grid-column: auto / span 2;
+}
+
+.scrolltable{
+    width: 700px;
+    border: 1px solid #000;
+    border-collapse: collapse; /* 테두리 사이의 간격을 없애줌 */
+    empty-cells: hide; /* 사용하지 않는 빈 셀의 테두리를 표시하지 않음*/
+}
+
+td{
+    border: 1px solid #000;
+}
+
+.intext{
+    text-align: right;
+}
+
+.menubutton{
+    width: 200px;
+    height: 160px;
+    background-color: transparent; /* 배경색 없애기 */
+    border: none;
+}
+
+img{
+    width: 150px;
+    height: 150px;
+}
+
+.pay{
+    text-align: justify;
+    padding-top: 20px;
+    padding-left: 70px;
+}
